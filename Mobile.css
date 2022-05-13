@@ -1,0 +1,116 @@
+.container{
+  margin-top: 60px;
+}
+body{
+  background-color: #fafafa;
+}
+#mobile{
+  margin-top: 3rem;
+  background-color: #f5f3f8;
+  border: 10px solid #f0eded;
+  border-radius: 18px;
+
+}
+.msg-price{
+  opacity: 0;
+  overflow: hidden;
+  animation: chat 0.15s ease-out 0s forwards;
+  animation-delay: var(--time);
+  color: white;
+  padding-left: 5px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #fc2ef1,  #ba0aff);
+}
+.panel-heading{
+  color: white;
+  background-image: linear-gradient(to right, #ba0aff, #fc2ef1);
+  border-radius: 6px;
+  height: 40px;
+  margin-bottom: 5px;
+  padding-inline-start: 8px;
+}
+.img-rounded{
+    margin-left: 7px;
+    margin-top: 7px;
+    border-radius: 13px;
+    border: 2px;
+    border-color: white;
+    border-style: solid;
+}
+span{
+  padding-left: 14px;
+  padding-top: 10px;
+}
+.dog{
+  opacity: 0;
+  overflow: hidden;
+  animation: chat 0.15s ease-out 0s forwards;
+  animation-delay: var(--time);
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.msg-right{
+  display: flex;
+  justify-content:flex-end
+}
+.msg-right{
+  opacity: 0;
+  overflow: hidden;
+  animation: chat 0.15s ease-out 0s forwards;
+  animation-delay: var(--time);
+  margin-bottom: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
+  background-color:white;
+}
+.msg-left{
+  opacity: 0;
+  overflow: hidden;
+  animation: chat 0.15s  ease-out 0s forwards;
+  animation-delay: var(--time);
+  color: #8f6fa5;
+  padding-left: 5px;
+  border-radius: 10px;
+  background-color: #ede4f5;
+}
+.footer{
+  color: rgb(199, 200, 201);
+  padding-left: 30px;
+  border-radius: 25px;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+}
+.form{
+  border-radius: 20px;
+  border-style: none;
+  padding-left: 4rem;
+  border-color: none;
+}
+input{
+  width: 80%;
+}
+svg{
+  color:rgb(102, 100, 100);
+}
+button{
+  cursor: pointer;
+  border-style: none;
+  border-color: none;
+  background-color: #f5f3f8;
+}
+@keyframes chat {
+  0% {
+    max-height: 100vmax;
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    max-height: 100vmax;
+    overflow: visible;
+    padding-top: 1rem;
+  }
+}
